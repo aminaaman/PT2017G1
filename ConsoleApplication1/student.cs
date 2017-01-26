@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace student
 {
-    class Student
+    class Student // creating class Student
     {
-        public string name;
-        public string surname;
+        public string name;     //student's info
+        public string surname;                  
         public int age;
         public double gpa;
 
-        public Student(string name, string surname, int age, double gpa)
+        public Student(string name, string surname, int age, double gpa) //constructor that initializes info
         {
             this.name = name;
             this.surname = surname;
@@ -21,7 +21,7 @@ namespace student
             this.gpa = gpa;
         }
 
-        public override string ToString()
+        public override string ToString() // function that outputs data as a string
         {
             return name + " " + surname + " " + age + " " + gpa;
         }
@@ -31,8 +31,8 @@ namespace student
     {
         static void Main(string[] args)
         {
-            Student s = new Student("Amina", "Aman", 25, 3.8);
-            Console.WriteLine(s.ToString());
+            Student s = new Student("Amina", "Aman", 25, 3.8); //creating a new variable
+            Console.WriteLine(s.ToString()); // output by ToString
         }
     }
 }
